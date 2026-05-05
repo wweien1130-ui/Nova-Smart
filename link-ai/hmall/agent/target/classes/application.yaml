@@ -1,0 +1,49 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: hm-agent
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: 192.168.115.128:8848
+      username: nacos
+      password: nacos
+      config:
+        file-extension: yaml
+        import-check:
+          enabled: false        # 禁用导入检查
+    compatibility-verifier:
+      enabled: false            # 禁用兼容校验
+  config:
+    import:
+      - optional:nacos:hm-agent.yaml
+      - optional:nacos:common.yaml
+      - optional:nacos:system-chat-message.yaml
+      - optional:nacos:shared-log.yaml
+
+
+
+#  redis:
+#    sentinel:
+#      master: mymaster
+#      nodes: 192.168.115.128:27001,192.168.115.128:27002,192.168.115.128:27003
+#      password: 696903
+#    password: 696903
+#    timeout: 5000
+#    lettuce:
+#      pool:
+#        max-active: 8
+#        max-idle: 8
+#        min-idle: 0
+
+mybatis-plus:
+  global-config:
+    db-config:
+      update-strategy: not_null
+      id-type: auto
+  configuration:
+    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
+
+
