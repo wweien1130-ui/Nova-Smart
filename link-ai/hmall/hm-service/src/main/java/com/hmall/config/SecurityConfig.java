@@ -2,6 +2,7 @@ package com.hmall.config;
 
 
 import com.hmall.common.config.JwtProperties;
+import com.hmall.common.utils.JwtTool;
 
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -23,14 +24,17 @@ public class SecurityConfig {
 
     @Bean
     public KeyPair keyPair(JwtProperties properties){
-        // 获取秘钥工厂
         KeyStoreKeyFactory keyStoreKeyFactory =
                 new KeyStoreKeyFactory(
                         properties.getLocation(),
                         properties.getPassword().toCharArray());
-        //读取钥匙对
         return keyStoreKeyFactory.getKeyPair(
                 properties.getAlias(),
                 properties.getPassword().toCharArray());
+    }
+
+    @Bean
+    public JwtTool jwtTool(KeyPair keyPair) {
+        return new JwtTool(keyPair);
     }
 }

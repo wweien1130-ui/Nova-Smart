@@ -98,7 +98,7 @@ public class AIServiceConfig {
         return MessageWindowChatMemory.builder()
                 .chatMemoryRepository(chatMemoryRepository)
                 .maxMessages(this.maxMessages)
-                .build();
+                .build(); // 滑动窗口自动管理消息数量
     }
 
 }

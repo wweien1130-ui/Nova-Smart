@@ -1001,3 +1001,183 @@ java.lang.RuntimeException: 请先登录后再操作
 15:14:46:824  INFO 468 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
 15:14:46:826  INFO 468 --- [hm-agent] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 15:14:46:840  INFO 468 --- [hm-agent] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+15:32:41:435  INFO 3988 --- [hm-agent] [main] com.liang.agent.AgentApplication         : Starting AgentApplication using Java 23.0.2 with PID 3988 (E:\private_project\LiinkAi_Cloud\link-ai\hmall\agent\target\classes started by selest in E:\private_project\LiinkAi_Cloud)
+15:32:41:437  INFO 3988 --- [hm-agent] [main] com.liang.agent.AgentApplication         : The following 1 profile is active: "dev"
+15:32:41:495  INFO 3988 --- [hm-agent] [main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=shared-log.yaml, group=DEFAULT_GROUP] success
+15:32:41:495  INFO 3988 --- [hm-agent] [main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=system-chat-message.yaml, group=DEFAULT_GROUP] success
+15:32:41:495  INFO 3988 --- [hm-agent] [main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=common.yaml, group=DEFAULT_GROUP] success
+15:32:41:495  INFO 3988 --- [hm-agent] [main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=hm-agent.yaml, group=DEFAULT_GROUP] success
+15:32:42:447  INFO 3988 --- [hm-agent] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+15:32:42:449  INFO 3988 --- [hm-agent] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+15:32:42:482  INFO 3988 --- [hm-agent] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+15:32:42:752  INFO 3988 --- [hm-agent] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4934fe3c-eb72-3fe9-bef3-0c25d4756c03
+15:32:42:972  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$RetryInterceptorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$RetryInterceptorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+15:32:42:975  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+15:32:42:976  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+15:32:42:980  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+15:32:42:982  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+15:32:42:983  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda/0x0000020b816a4c60] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+15:32:42:986  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+15:32:42:991  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.loadbalancer-org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+15:32:42:997  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+15:32:42:999  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'default.org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+15:32:43:000  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientFactory' of type [org.springframework.cloud.loadbalancer.support.LoadBalancerClientFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+15:32:43:004  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'blockingLoadBalancerClient' of type [org.springframework.cloud.loadbalancer.blocking.client.BlockingLoadBalancerClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+15:32:43:011  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerServiceInstanceCookieTransformer' of type [org.springframework.cloud.loadbalancer.core.LoadBalancerServiceInstanceCookieTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+15:32:43:013  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'xForwarderHeadersTransformer' of type [org.springframework.cloud.loadbalancer.blocking.XForwardedHeadersTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+15:32:43:013  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+15:32:43:015  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerRequestFactory' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+15:32:43:016  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerRetryConfig' of type [org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerRetryConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+15:32:43:017  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancedRetryFactory' of type [org.springframework.cloud.loadbalancer.blocking.retry.BlockingLoadBalancedRetryFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+15:32:43:020  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.RetryLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+15:32:43:020  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+15:32:43:020  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+15:32:43:021  WARN 3988 --- [hm-agent] [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+15:32:43:235  INFO 3988 --- [hm-agent] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+15:32:43:257  INFO 3988 --- [hm-agent] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:32:43:258  INFO 3988 --- [hm-agent] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+15:32:43:323  INFO 3988 --- [hm-agent] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15:32:43:323  INFO 3988 --- [hm-agent] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1827 ms
+15:32:43:423  INFO 3988 --- [hm-agent] [main] c.liang.agent.config.SystemPromptConfig  : 读取hm:
+  ai:
+    system-prompt: |
+      你是一个智能购物助手，名字叫"小惠"，运行在"LinkAI 电商平台"上。
+
+      ## 你的身份
+      - 你是用户的私人购物助理，热情、专业、有耐心
+      - 你帮助用户完成商品搜索、购物车管理、下单和支付等操作
+
+      ## 你可以使用的工具（必须使用工具，禁止编造数据）
+      - searchItems(keyword): 根据关键词搜索商品，**必须使用此工具搜索真实商品数据，禁止编造商品信息**
+      - getItemDetail(itemId): 查看商品详情
+      - addToCart(itemId, name, price, image, spec): 添加商品到购物车
+      - viewCart(): 查看购物车内容
+      - createOrder(details, paymentType, addressId): 创建订单
+      - payOrder(orderId, password): 支付订单
+
+      ## 行为规范
+      1. 每次执行关键操作前（加购、下单、支付），必须先向用户确认
+      2. 回复要简洁明了，不要超过 200 字
+      3. 价格单位是"分"，展示给用户时要转换为"元"
+      4. 如果用户没有指定收货地址，引导用户先查看或选择地址
+      5. 支付密码属于敏感信息，确认用户输入后再提交
+      6. 如果工具调用失败，给出友好的错误提示和解决建议
+      7. **禁止编造商品数据！** 当用户询问商品信息时，必须先调用 searchItems 工具获取真实数据，不能凭自己的知识回答
+
+      ## 对话风格
+      - 使用友好的语气，可以适当使用表情符号
+      - 对商品描述要突出卖点
+      - 在用户犹豫时给出专业建议
+成功，内容为：hm:
+  ai:
+    system-prompt: |
+      你是一个智能购物助手，名字叫"小惠"，运行在"LinkAI 电商平台"上。
+
+      ## 你的身份
+      - 你是用户的私人购物助理，热情、专业、有耐心
+      - 你帮助用户完成商品搜索、购物车管理、下单和支付等操作
+
+      ## 你可以使用的工具（必须使用工具，禁止编造数据）
+      - searchItems(keyword): 根据关键词搜索商品，**必须使用此工具搜索真实商品数据，禁止编造商品信息**
+      - getItemDetail(itemId): 查看商品详情
+      - addToCart(itemId, name, price, image, spec): 添加商品到购物车
+      - viewCart(): 查看购物车内容
+      - createOrder(details, paymentType, addressId): 创建订单
+      - payOrder(orderId, password): 支付订单
+
+      ## 行为规范
+      1. 每次执行关键操作前（加购、下单、支付），必须先向用户确认
+      2. 回复要简洁明了，不要超过 200 字
+      3. 价格单位是"分"，展示给用户时要转换为"元"
+      4. 如果用户没有指定收货地址，引导用户先查看或选择地址
+      5. 支付密码属于敏感信息，确认用户输入后再提交
+      6. 如果工具调用失败，给出友好的错误提示和解决建议
+      7. **禁止编造商品数据！** 当用户询问商品信息时，必须先调用 searchItems 工具获取真实数据，不能凭自己的知识回答
+
+      ## 对话风格
+      - 使用友好的语气，可以适当使用表情符号
+      - 对商品描述要突出卖点
+      - 在用户犹豫时给出专业建议
+
+15:32:43:427  INFO 3988 --- [hm-agent] [main] c.a.nacos.client.config.impl.CacheData   : config listener notify warn timeout millis use default 60000 millis 
+15:32:43:427  INFO 3988 --- [hm-agent] [main] c.a.nacos.client.config.impl.CacheData   : nacos.cache.data.init.snapshot = true 
+15:32:43:430  INFO 3988 --- [hm-agent] [main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.115.128_8848] [subscribe] system-chat-message.yaml+DEFAULT_GROUP
+15:32:43:436  INFO 3988 --- [hm-agent] [main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.115.128_8848] [add-listener] ok, tenant=, dataId=system-chat-message.yaml, group=DEFAULT_GROUP, cnt=1
+15:32:44:133  INFO 3988 --- [hm-agent] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'hmall-service' URL not provided. Will try picking an instance via load-balancing.
+15:32:44:245  INFO 3988 --- [hm-agent] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'hmall-service' URL not provided. Will try picking an instance via load-balancing.
+15:32:44:263  INFO 3988 --- [hm-agent] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'hmall-service' URL not provided. Will try picking an instance via load-balancing.
+15:32:44:277  INFO 3988 --- [hm-agent] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'hmall-service' URL not provided. Will try picking an instance via load-balancing.
+15:32:47:182  INFO 3988 --- [hm-agent] [main] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@45d64d27
+15:32:47:877  INFO 3988 --- [hm-agent] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+15:32:47:897  INFO 3988 --- [hm-agent] [main] com.alibaba.nacos.client.naming          : initializer namespace from ans.namespace attribute : null
+15:32:47:897  INFO 3988 --- [hm-agent] [main] com.alibaba.nacos.client.naming          : initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+15:32:47:897  INFO 3988 --- [hm-agent] [main] com.alibaba.nacos.client.naming          : initializer namespace from namespace attribute :null
+15:32:47:901  INFO 3988 --- [hm-agent] [main] com.alibaba.nacos.client.naming          : FailoverDataSource type is class com.alibaba.nacos.client.naming.backups.datasource.DiskFailoverDataSource
+15:32:47:905  INFO 3988 --- [hm-agent] [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+15:32:47:905  INFO 3988 --- [hm-agent] [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+15:32:48:153  INFO 3988 --- [hm-agent] [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 2763fcec-9c54-40ad-95ac-211a38abe83d
+15:32:48:158  INFO 3988 --- [hm-agent] [main] com.alibaba.nacos.client.naming          : Create naming rpc client for uuid->2763fcec-9c54-40ad-95ac-211a38abe83d
+15:32:48:158  INFO 3988 --- [hm-agent] [main] com.alibaba.nacos.common.remote.client   : [2763fcec-9c54-40ad-95ac-211a38abe83d] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+15:32:48:158  INFO 3988 --- [hm-agent] [main] com.alibaba.nacos.common.remote.client   : [2763fcec-9c54-40ad-95ac-211a38abe83d] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+15:32:48:159  INFO 3988 --- [hm-agent] [main] com.alibaba.nacos.common.remote.client   : [2763fcec-9c54-40ad-95ac-211a38abe83d] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+15:32:48:159  INFO 3988 --- [hm-agent] [main] com.alibaba.nacos.common.remote.client   : [2763fcec-9c54-40ad-95ac-211a38abe83d] Try to connect to server on start up, server: {serverIp = '192.168.115.128', server main port = 8848}
+15:32:48:160  INFO 3988 --- [hm-agent] [main] c.a.n.c.remote.client.grpc.GrpcClient    : grpc client connection server:192.168.115.128 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+15:32:48:315  INFO 3988 --- [hm-agent] [main] com.alibaba.nacos.common.remote.client   : [2763fcec-9c54-40ad-95ac-211a38abe83d] Success to connect to server [192.168.115.128:8848] on start up, connectionId = 1778139168183_192.168.115.1_52780
+15:32:48:315  INFO 3988 --- [hm-agent] [com.alibaba.nacos.client.remote.worker.0] com.alibaba.nacos.common.remote.client   : [2763fcec-9c54-40ad-95ac-211a38abe83d] Notify connected event to listeners.
+15:32:48:315  INFO 3988 --- [hm-agent] [main] com.alibaba.nacos.common.remote.client   : [2763fcec-9c54-40ad-95ac-211a38abe83d] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+15:32:48:315  INFO 3988 --- [hm-agent] [com.alibaba.nacos.client.remote.worker.0] com.alibaba.nacos.client.naming          : Grpc connection connect
+15:32:48:315  INFO 3988 --- [hm-agent] [main] com.alibaba.nacos.common.remote.client   : [2763fcec-9c54-40ad-95ac-211a38abe83d] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x0000020b813ce420
+15:32:48:318  INFO 3988 --- [hm-agent] [main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service hm-agent with instance Instance{instanceId='null', ip='192.168.115.1', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=[fc18:dc72:286c:8515:2774:0:0:1], preserved.register.source=SPRING_CLOUD}}
+15:32:48:331  INFO 3988 --- [hm-agent] [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP hm-agent 192.168.115.1:8080 register finished
+15:32:48:348  INFO 3988 --- [hm-agent] [main] com.liang.agent.AgentApplication         : Started AgentApplication in 10.174 seconds (process running for 10.844)
+15:32:48:352  INFO 3988 --- [hm-agent] [main] c.l.agent.config.RedisConfigValidator    : === Redis Sentinel Configuration Validation ===
+15:32:48:352  INFO 3988 --- [hm-agent] [main] c.l.agent.config.RedisConfigValidator    : Sentinel Master: 
+15:32:48:352  INFO 3988 --- [hm-agent] [main] c.l.agent.config.RedisConfigValidator    : Sentinel Nodes: 
+15:32:48:352  INFO 3988 --- [hm-agent] [main] c.l.agent.config.RedisConfigValidator    : Sentinel Password: ***
+15:32:48:352  WARN 3988 --- [hm-agent] [main] c.l.agent.config.RedisConfigValidator    : Redis sentinel master name is null or empty!
+15:32:48:352  WARN 3988 --- [hm-agent] [main] c.l.agent.config.RedisConfigValidator    : Redis sentinel nodes is null or empty!
+15:32:48:352  INFO 3988 --- [hm-agent] [main] c.l.agent.config.RedisConfigValidator    : === Configuration Validation Complete ===
+15:32:48:364  INFO 3988 --- [hm-agent] [main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.115.128_8848] [subscribe] shared-log.yaml+DEFAULT_GROUP
+15:32:48:364  INFO 3988 --- [hm-agent] [main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.115.128_8848] [add-listener] ok, tenant=, dataId=shared-log.yaml, group=DEFAULT_GROUP, cnt=1
+15:32:48:365  INFO 3988 --- [hm-agent] [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=shared-log.yaml, group=DEFAULT_GROUP
+15:32:48:376  INFO 3988 --- [hm-agent] [main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.115.128_8848] [subscribe] common.yaml+DEFAULT_GROUP
+15:32:48:376  INFO 3988 --- [hm-agent] [main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.115.128_8848] [add-listener] ok, tenant=, dataId=common.yaml, group=DEFAULT_GROUP, cnt=1
+15:32:48:376  INFO 3988 --- [hm-agent] [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=common.yaml, group=DEFAULT_GROUP
+15:32:48:377  INFO 3988 --- [hm-agent] [main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.115.128_8848] [add-listener] ok, tenant=, dataId=system-chat-message.yaml, group=DEFAULT_GROUP, cnt=2
+15:32:48:377  INFO 3988 --- [hm-agent] [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=system-chat-message.yaml, group=DEFAULT_GROUP
+15:32:48:388  INFO 3988 --- [hm-agent] [main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.115.128_8848] [subscribe] hm-agent.yaml+DEFAULT_GROUP
+15:32:48:388  INFO 3988 --- [hm-agent] [main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.115.128_8848] [add-listener] ok, tenant=, dataId=hm-agent.yaml, group=DEFAULT_GROUP, cnt=1
+15:32:48:388  INFO 3988 --- [hm-agent] [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=hm-agent.yaml, group=DEFAULT_GROUP
+15:32:52:258  WARN 3988 --- [hm-agent] [Thread-2] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+15:32:52:259  WARN 3988 --- [hm-agent] [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+15:32:52:259  WARN 3988 --- [hm-agent] [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+15:32:52:259  WARN 3988 --- [hm-agent] [Thread-2] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+15:32:52:396  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+15:32:52:396  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] public deregistering service hm-agent with instance: Instance{instanceId='null', ip='192.168.115.1', port=8080, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+15:32:52:405  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+15:32:52:407  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+15:32:52:407  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+15:32:52:407  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+15:32:52:407  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+15:32:52:407  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+15:32:52:407  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+15:32:52:407  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+15:32:52:407  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+15:32:52:407  WARN 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+15:32:52:407  WARN 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+15:32:52:407  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+15:32:52:407  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+15:32:52:407  WARN 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+15:32:52:407  WARN 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+15:32:52:407  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+15:32:52:407  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : Shutdown naming grpc client proxy for  uuid->2763fcec-9c54-40ad-95ac-211a38abe83d
+15:32:52:407  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : Shutdown grpc redo service executor java.util.concurrent.ScheduledThreadPoolExecutor@7336bb74[Running, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 1]
+15:32:52:407  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+15:32:52:407  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@3225aad3[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+15:32:52:407  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1778139168183_192.168.115.1_52780
+15:32:52:410  WARN 3988 --- [hm-agent] [nacos-grpc-client-executor-192.168.115.128-9] c.a.n.c.remote.client.grpc.GrpcClient    : [1778139168183_192.168.115.1_52780]Ignore error event,isRunning:false,isAbandon=false
+15:32:52:411  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@3c4ac9f6[Running, pool size = 10, active threads = 0, queued tasks = 0, completed tasks = 10]
+15:32:52:411  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : shutdown and remove naming rpc client  for uuid ->2763fcec-9c54-40ad-95ac-211a38abe83d
+15:32:52:411  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] c.a.n.c.a.r.identify.CredentialWatcher   : [null] CredentialWatcher is stopped
+15:32:52:411  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] c.a.n.c.a.r.identify.CredentialService   : [null] CredentialService is freed
+15:32:52:411  INFO 3988 --- [hm-agent] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop

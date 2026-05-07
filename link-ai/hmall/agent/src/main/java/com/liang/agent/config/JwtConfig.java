@@ -1,20 +1,19 @@
-package com.hmall.common.config;
+package com.liang.agent.config;
 
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import com.hmall.common.config.JwtProperties;
+import com.hmall.common.utils.JwtTool;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.security.rsa.crypto.KeyStoreKeyFactory;
 
 import java.security.KeyPair;
 
 @Configuration
 @EnableConfigurationProperties(JwtProperties.class)
-public class JwtAutoConfig {
+public class JwtConfig {
 
     @Bean
-    @ConditionalOnMissingBean(KeyPair.class)
     public KeyPair keyPair(JwtProperties jwtProperties) {
         KeyStoreKeyFactory keyFactory = new KeyStoreKeyFactory(
                 jwtProperties.getLocation(),
@@ -24,5 +23,10 @@ public class JwtAutoConfig {
                 jwtProperties.getAlias(),
                 jwtProperties.getPassword().toCharArray()
         );
+    }
+
+    @Bean
+    public JwtTool jwtTool(KeyPair keyPair) {
+        return new JwtTool(keyPair);
     }
 }

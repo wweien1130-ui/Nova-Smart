@@ -66,8 +66,8 @@ public class RouterAgentConfig {
                 .defaultSystem("你是商品搜索专家，负责帮助用户搜索商品和查询商品详情。")
                 .defaultTools(itemSearchTool)
                 .defaultAdvisors(
-                        MessageChatMemoryAdvisor.builder(chatMemory).build(),
-                        new SimpleLoggerAdvisor()
+                        MessageChatMemoryAdvisor.builder(chatMemory).build()
+//                        , new SimpleLoggerAdvisor()
                 )
                 .build();
     }
@@ -113,8 +113,8 @@ public class RouterAgentConfig {
 
                 .defaultTools(cartTool)
                 .defaultAdvisors(
-                        MessageChatMemoryAdvisor.builder(chatMemory).build(),
-                        new SimpleLoggerAdvisor()
+                        MessageChatMemoryAdvisor.builder(chatMemory).build()
+//                        , new SimpleLoggerAdvisor()
                 )
                 .build();
     }
@@ -132,8 +132,8 @@ public class RouterAgentConfig {
                 .defaultSystem("你是订单管理专家，负责帮助用户管理订单，包括创建订单、查询订单、取消订单、确认收货等操作。")
                 .defaultTools(orderTool)
                 .defaultAdvisors(
-                        MessageChatMemoryAdvisor.builder(chatMemory).build(),
-                        new SimpleLoggerAdvisor()
+                        MessageChatMemoryAdvisor.builder(chatMemory).build()
+//                        , new SimpleLoggerAdvisor()
                 )
                 .build();
     }
@@ -170,8 +170,8 @@ public class RouterAgentConfig {
                         """)
                 .defaultTools(addressTool)
                 .defaultAdvisors(
-                        MessageChatMemoryAdvisor.builder(chatMemory).build(),
-                        new SimpleLoggerAdvisor()
+                        MessageChatMemoryAdvisor.builder(chatMemory).build()
+//                        , new SimpleLoggerAdvisor()
                 )
                 .build();
 

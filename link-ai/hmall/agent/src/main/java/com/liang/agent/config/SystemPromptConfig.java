@@ -25,10 +25,15 @@ public class SystemPromptConfig {
 
     @PostConstruct
     public void init() {
-        if (aiProperties.getSystem() != null && aiProperties.getSystem().getChat() != null) {
-            loadConfig(aiProperties.getSystem().getChat(), chatSystemMessage);
-        } else {
-            log.warn("Nacos 配置未加载，system.chat 为 null，使用默认提示词");
+        try {
+            if (aiProperties.getSystem() != null && aiProperties.getSystem().getChat() != null) {
+                loadConfig(aiProperties.getSystem().getChat(), chatSystemMessage);
+            } else {
+                log.warn("Nacos 配置未加载，system.chat 为 null，使用默认提示词");
+                chatSystemMessage.set("你是一个专业的电商购物助手...");
+            }
+        } catch (Exception e) {
+            log.error("系统提示词初始化失败，使用默认提示词", e);
             chatSystemMessage.set("你是一个专业的电商购物助手...");
         }
     }

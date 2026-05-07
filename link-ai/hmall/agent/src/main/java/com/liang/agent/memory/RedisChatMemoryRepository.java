@@ -20,6 +20,7 @@ import java.util.Set;
 public class RedisChatMemoryRepository implements ChatMemoryRepository {
 
     // 默认redis中key的前缀
+    //TODO 这里的前缀应该从配置中读取，应该提取出去
     public static final String DEFAULT_PREFIX = "CHAT:";
 
     private final String prefix;

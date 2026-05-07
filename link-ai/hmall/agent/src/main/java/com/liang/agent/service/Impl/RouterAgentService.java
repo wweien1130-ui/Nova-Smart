@@ -38,7 +38,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class RouterAgentService {
 
 
-//    @Qualifier("routerChatClient")
+//    @Qualifier("routerChatClient") TODO 可以采取二级策略，precise intent + fuzzy intent
     private final ChatClient routerChatClient;
 
 //    @Qualifier("itemChatClient")
@@ -117,7 +117,7 @@ public class RouterAgentService {
         // 获取对话id
         String conversationId = ChatService.getConversationId(sessionId, userId);
 
-        // 异步更新会话信息
+        // 异步更新会话信息 TODO 此地应该引入kafka异步更新
         this.chatSessionService.update(sessionId, question, userId);
 
         // 1. 先用本地规则匹配意图（0 毫秒，不调 LLM）
