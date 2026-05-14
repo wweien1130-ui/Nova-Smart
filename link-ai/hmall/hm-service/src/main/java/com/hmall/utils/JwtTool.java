@@ -12,7 +12,7 @@ import java.security.KeyPair;
 import java.time.Duration;
 import java.util.Date;
 
-@Component
+//@Component
 public class JwtTool {
     private final JWTSigner jwtSigner;
 

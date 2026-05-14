@@ -12,7 +12,7 @@ import com.hmall.common.domain.vo.UserLoginVO;
 import com.hmall.enums.UserStatus;
 import com.hmall.mapper.UserMapper;
 import com.hmall.service.IUserService;
-import com.hmall.utils.JwtTool;
+import com.hmall.common.utils.JwtTool;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.password.PasswordEncoder;

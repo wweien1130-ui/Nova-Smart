@@ -2,7 +2,7 @@ package com.hmall.config;
 
 import cn.hutool.core.collection.CollUtil;
 import com.hmall.interceptor.LoginInterceptor;
-import com.hmall.utils.JwtTool;
+import com.hmall.common.utils.JwtTool;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
@@ -33,8 +33,8 @@ public class MvcConfig implements WebMvcConfigurer {
         // 2.配置拦截路径
         List<String> includePaths = authProperties.getIncludePaths();
         if (CollUtil.isNotEmpty(includePaths)) {
-            //TODO:零食禁用登录拦截器
-//            registration.addPathPatterns(includePaths);
+//            TODO:零食禁用登录拦截器
+            registration.addPathPatterns(includePaths);
         }
         // 3.配置放行路径
         List<String> excludePaths = authProperties.getExcludePaths();
