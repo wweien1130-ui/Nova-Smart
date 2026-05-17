@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7e7435e-88a4-45c2-adf0-517e657eef83" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/link-ai/MarkDown/SUM/5.17.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/link-ai/hmall/hm-common/src/main/java/com/hmall/common/domain/msg/ChatLogMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/link-ai/hmall/hm-common/src/main/java/com/hmall/common/domain/msg/UserActionMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/link-ai/hmall/hm-service/src/main/java/com/hmall/service/mq/ChatLogConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/link-ai/hmall/hm-service/src/main/java/com/hmall/service/mq/ChatLogProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/link-ai/hmall/hm-service/src/main/java/com/hmall/service/mq/UserActionProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/link-ai/hmall/hm-common/src/main/java/com/hmall/common/constants/RabbitMQConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/link-ai/hmall/hm-common/src/main/java/com/hmall/common/constants/RabbitMQConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/link-ai/hmall/hm-service/src/main/java/com/hmall/service/mq/OrderMessageProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/link-ai/hmall/hm-service/src/main/java/com/hmall/service/mq/OrderMessageProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/link-ai/hmall-nginx/conf/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/link-ai/hmall-nginx/conf/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/link-ai/hmall-nginx/html/hmall-portal/js/agent-chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/link-ai/hmall-nginx/html/hmall-portal/js/agent-chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/link-ai/hmall-nginx/logs/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/link-ai/hmall-nginx/logs/access.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/link-ai/hmall-nginx/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/link-ai/hmall-nginx/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/link-ai/hmall-nginx/logs/nginx.pid" beforeDir="false" afterPath="$PROJECT_DIR$/link-ai/hmall-nginx/logs/nginx.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hm-agent/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hm-agent/spring.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +115,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AgentApplication">
+  <component name="RunManager" selected="Spring Boot.HMallApplication">
     <configuration name="AgentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="agent" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.liang.agent.AgentApplication" />
@@ -184,7 +182,7 @@
       <workItem from="1778218607136" duration="829000" />
       <workItem from="1778748271692" duration="10540000" />
       <workItem from="1779013414021" duration="954000" />
-      <workItem from="1779018336589" duration="4475000" />
+      <workItem from="1779018336589" duration="5873000" />
     </task>
     <servers />
   </component>

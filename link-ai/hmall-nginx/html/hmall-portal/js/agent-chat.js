@@ -5,7 +5,7 @@
  */
 (function () {
     'use strict';
-    
+
     console.log('[LinkAI] 脚本开始加载...');
 
     // ===== 配置 =====
@@ -25,7 +25,7 @@
             panelOffsetY: -340, // 面板在按钮上方
         }
     };
-    
+
     console.log('[LinkAI] 配置:', CONFIG);
 
     // ===== 样式注入 =====
@@ -558,13 +558,13 @@
         floatBtn.id = 'linkaiFloatBtn';
         floatBtn.innerHTML = '<span>🤖</span><span class="linkai-badge" id="linkaiBadge">1</span>';
         floatBtn.title = '打开 LinkAI 智能助手';
-        
+
         // 初始化位置（右下角）
         let posX = window.innerWidth - 90;  // 60px 按钮 + 30px 间距
         let posY = window.innerHeight - 90;
         floatBtn.style.left = posX + 'px';
         floatBtn.style.top = posY + 'px';
-        
+
         // 拖拽状态
         let isDragging = false;
         let dragStartX = 0;
@@ -572,7 +572,7 @@
         let dragStartLeft = 0;
         let dragStartTop = 0;
         let clickMoved = false;
-        
+
         // 鼠标/触摸拖拽事件
         function startDrag(clientX, clientY) {
             isDragging = true;
@@ -583,7 +583,7 @@
             dragStartTop = parseFloat(floatBtn.style.top) || posY;
             floatBtn.classList.add('linkai-dragging');
         }
-        
+
         function moveDrag(clientX, clientY) {
             if (!isDragging) return;
             const dx = clientX - dragStartX;
@@ -601,7 +601,7 @@
             // 更新面板位置
             updatePanelPosition(newLeft, newTop);
         }
-        
+
         function endDrag() {
             if (!isDragging) return;
             isDragging = false;
@@ -610,25 +610,7 @@
             posX = parseFloat(floatBtn.style.left);
             posY = parseFloat(floatBtn.style.top);
         }
-        
-        // 更新面板位置（面板在按钮上方）
-        function updatePanelPosition(btnLeft, btnTop) {
-            const panel = document.getElementById('linkaiPanel');
-            if (!panel) return;
-            const panelWidth = 380;
-            const panelHeight = 600;
-            let panelLeft = btnLeft + 60 - panelWidth;
-            let panelTop = btnTop - panelHeight - 10;
-            // 边界限制
-            if (panelLeft < 5) panelLeft = 5;
-            if (panelLeft + panelWidth > window.innerWidth - 5) {
-                panelLeft = window.innerWidth - panelWidth - 5;
-            }
-            if (panelTop < 5) panelTop = btnTop + 70; // 面板在按钮下方
-            panel.style.left = panelLeft + 'px';
-            panel.style.top = panelTop + 'px';
-        }
-        
+
         // 鼠标事件
         floatBtn.addEventListener('mousedown', function(e) {
             startDrag(e.clientX, e.clientY);
@@ -640,7 +622,7 @@
         document.addEventListener('mouseup', function() {
             endDrag();
         });
-        
+
         // 触摸事件（移动端支持）
         floatBtn.addEventListener('touchstart', function(e) {
             const touch = e.touches[0];
@@ -654,7 +636,7 @@
         document.addEventListener('touchend', function() {
             endDrag();
         });
-        
+
         // 点击事件（区分拖拽和点击）
         floatBtn.addEventListener('click', function(e) {
             if (clickMoved) {
@@ -786,6 +768,24 @@
         }, 50);
     }
 
+    // ===== 更新面板位置（面板在按钮上方）=====
+    function updatePanelPosition(btnLeft, btnTop) {
+        const panel = document.getElementById('linkaiPanel');
+        if (!panel) return;
+        const panelWidth = 380;
+        const panelHeight = 600;
+        let panelLeft = btnLeft + 60 - panelWidth;
+        let panelTop = btnTop - panelHeight - 10;
+        // 边界限制
+        if (panelLeft < 5) panelLeft = 5;
+        if (panelLeft + panelWidth > window.innerWidth - 5) {
+            panelLeft = window.innerWidth - panelWidth - 5;
+        }
+        if (panelTop < 5) panelTop = btnTop + 70; // 面板在按钮下方
+        panel.style.left = panelLeft + 'px';
+        panel.style.top = panelTop + 'px';
+    }
+
     // ===== 面板开关 =====
     function togglePanel() {
         state.isOpen = !state.isOpen;
@@ -855,7 +855,7 @@
                         userId = userInfo.userId || null;
                     } catch (e) {}
                 }
-                
+
                 const headers = { 'Content-Type': 'application/json' };
                 if (token) {
                     headers['authorization'] = token;
@@ -926,7 +926,7 @@
                     userId = userInfo.userId || null;
                 } catch (e) {}
             }
-            
+
             console.log('[LinkAI] 发送请求 - token:', token ? token.substring(0, 20) + '...' : '无');
             console.log('[LinkAI] 发送请求 - userId:', userId);
 
@@ -989,7 +989,7 @@
                                         if (spec === '{}' || spec === '[]') spec = '';
                                         // 清理图片URL中可能的尾部乱码
                                         let imgUrl = item.image || '';
-                                        
+
                                         productCards += `
                                             <div class="linkai-product-card">
                                                 <div class="linkai-product-card-inner">
@@ -1090,10 +1090,10 @@
     function renderHistorySessions() {
         const list = elements.historyList;
         if (!list) return;
-        
+
         const groups = state.historySessions;
         const groupKeys = Object.keys(groups);
-        
+
         if (groupKeys.length === 0) {
             list.innerHTML = '<div style="padding:20px;text-align:center;color:#999;font-size:12px;">暂无历史会话</div>';
             return;
@@ -1105,9 +1105,9 @@
         for (const key of order) {
             const sessions = groups[key];
             if (!sessions || sessions.length === 0) continue;
-            
+
             html += `<div style="padding:4px 14px 2px;font-size:11px;color:#999;font-weight:500;">${key}</div>`;
-            
+
             for (const session of sessions) {
                 const title = session.title || '新会话';
                 const time = session.updateTime ? formatTime(new Date(session.updateTime).getTime()) : '';
@@ -1133,7 +1133,7 @@
                 `;
             }
         }
-        
+
         list.innerHTML = html;
     }
 
@@ -1145,10 +1145,10 @@
             });
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
             const messages = await response.json();
-            
+
             // 清空消息区域
             elements.messages.innerHTML = '';
-            
+
             // 渲染消息
             if (messages && messages.length > 0) {
                 for (const msg of messages) {
@@ -1159,12 +1159,12 @@
                     }
                 }
             }
-            
+
             state.currentSessionId = sessionId;
-            
+
             // 更新历史列表高亮
             renderHistorySessions();
-            
+
             scrollToBottom();
         } catch (err) {
             console.error('[LinkAI] 加载会话消息失败:', err);
@@ -1174,7 +1174,7 @@
     // 删除历史会话
     window.__linkaiDeleteSession = async function(sessionId) {
         if (!confirm('确定要删除该会话吗？')) return;
-        
+
         try {
             const token = sessionStorage.getItem('token') || '';
             const headers = {};
@@ -1186,7 +1186,7 @@
                 headers: headers,
             });
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
-            
+
             // 如果删除的是当前会话，清空当前会话
             if (state.currentSessionId === sessionId) {
                 state.currentSessionId = null;
@@ -1197,7 +1197,7 @@
                     </div>
                 `;
             }
-            
+
             // 重新加载历史列表
             loadHistorySessions();
         } catch (err) {
