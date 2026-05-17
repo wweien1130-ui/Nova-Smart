@@ -36,4 +36,3 @@ com\hmall\common\domain\dto\OrderDetailDTO.class
 com\hmall\common\domain\dto\PayApplyDTO.class
 com\hmall\common\utils\Convert.class
 com\hmall\common\domain\vo\OrderVO.class
-com\hmall\common\config\JwtAutoConfig.class

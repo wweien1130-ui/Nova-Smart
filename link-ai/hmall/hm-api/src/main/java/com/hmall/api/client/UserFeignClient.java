@@ -5,7 +5,7 @@ import com.hmall.common.domain.vo.UserLoginVO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
-@FeignClient(name = "hmall-service", path = "/users")
+@FeignClient(name = "hmall-service", path = "/users", configuration = com.hmall.api.config.DefaultFeignConfig.class)
 public interface UserFeignClient {
 
     @PostMapping("/login")

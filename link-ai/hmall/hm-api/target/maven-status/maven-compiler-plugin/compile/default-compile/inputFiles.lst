@@ -2,4 +2,5 @@ E:\private_project\LiinkAi_Cloud\link-ai\hmall\hm-api\src\main\java\com\hmall\ap
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\hm-api\src\main\java\com\hmall\api\client\CartFeignClient.java
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\hm-api\src\main\java\com\hmall\api\client\ItemFeignClient.java
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\hm-api\src\main\java\com\hmall\api\client\OrderFeignClient.java
+E:\private_project\LiinkAi_Cloud\link-ai\hmall\hm-api\src\main\java\com\hmall\api\client\UserFeignClient.java
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\hm-api\src\main\java\com\hmall\api\config\DefaultFeignConfig.java

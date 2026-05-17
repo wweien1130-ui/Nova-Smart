@@ -1,6 +1,7 @@
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\agent\src\main\java\com\liang\agent\AgentApplication.java
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\agent\src\main\java\com\liang\agent\config\AIProperties.java
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\agent\src\main\java\com\liang\agent\config\AIServiceConfig.java
+E:\private_project\LiinkAi_Cloud\link-ai\hmall\agent\src\main\java\com\liang\agent\config\JwtConfig.java
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\agent\src\main\java\com\liang\agent\config\RedisConfig.java
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\agent\src\main\java\com\liang\agent\config\RedisConfigValidator.java
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\agent\src\main\java\com\liang\agent\config\RestTemplateConfig.java
@@ -12,6 +13,7 @@ E:\private_project\LiinkAi_Cloud\link-ai\hmall\agent\src\main\java\com\liang\age
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\agent\src\main\java\com\liang\agent\constants\Constant.java
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\agent\src\main\java\com\liang\agent\constants\SystemConstants.java
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\agent\src\main\java\com\liang\agent\controller\AgentController.java
+E:\private_project\LiinkAi_Cloud\link-ai\hmall\agent\src\main\java\com\liang\agent\controller\AgentLoginController.java
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\agent\src\main\java\com\liang\agent\controller\ChatController.java
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\agent\src\main\java\com\liang\agent\controller\SessionController.java
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\agent\src\main\java\com\liang\agent\converters\AddressConverter.java

@@ -9,7 +9,6 @@ com\hmall\controller\CartController.class
 com\hmall\domain\po\Address.class
 com\hmall\mapper\AddressMapper.class
 com\hmall\mapper\PayOrderMapper.class
-com\hmall\config\JwtProperties.class
 com\hmall\mapper\ItemMapper.class
 com\hmall\service\impl\OrderLogisticsServiceImpl.class
 com\hmall\service\impl\OrderServiceImpl.class

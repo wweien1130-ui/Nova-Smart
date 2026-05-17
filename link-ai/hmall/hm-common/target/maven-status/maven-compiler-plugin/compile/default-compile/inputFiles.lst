@@ -1,7 +1,6 @@
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\hm-common\src\main\java\com\hmall\common\advice\CommonExceptionAdvice.java
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\hm-common\src\main\java\com\hmall\common\annotation\NoWrapper.java
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\hm-common\src\main\java\com\hmall\common\config\JsonConfig.java
-E:\private_project\LiinkAi_Cloud\link-ai\hmall\hm-common\src\main\java\com\hmall\common\config\JwtAutoConfig.java
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\hm-common\src\main\java\com\hmall\common\config\JwtProperties.java
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\hm-common\src\main\java\com\hmall\common\config\MyBatisConfig.java
 E:\private_project\LiinkAi_Cloud\link-ai\hmall\hm-common\src\main\java\com\hmall\common\domain\dto\AddressDTO.java

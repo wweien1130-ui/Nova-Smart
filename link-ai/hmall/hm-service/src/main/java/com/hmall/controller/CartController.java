@@ -44,7 +44,9 @@ public class CartController {
     @ApiOperation("查询购物车列表")
     @GetMapping
     public List<CartVO> queryMyCarts(){
-        return cartService.queryMyCarts(UserContext.getUser());
+        Long userId = UserContext.getUser();
+        System.out.println("=====> CartController.queryMyCarts - UserContext.getUser() = " + userId);
+        return cartService.queryMyCarts(userId);
     }
     @ApiOperation("批量删除购物车中商品")
     @ApiImplicitParam(name = "ids", value = "购物车条目id集合")

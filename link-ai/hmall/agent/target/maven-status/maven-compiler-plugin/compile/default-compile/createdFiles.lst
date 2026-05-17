@@ -64,8 +64,10 @@ com\liang\agent\memory\MyAssistantMessage.class
 com\liang\agent\service\ChatService.class
 com\liang\agent\result\ItemInfo$ItemInfoBuilder.class
 com\liang\agent\domain\dto\ChatDTO$ChatDTOBuilder.class
+com\liang\agent\controller\AgentLoginController.class
 com\liang\agent\enums\AgentTypeEnum.class
 com\liang\agent\result\OrderInfo$OrderInfoBuilder.class
+com\liang\agent\config\JwtConfig.class
 com\liang\agent\config\RestTemplateConfig.class
 com\liang\agent\config\SystemPromptConfig.class
 com\liang\agent\domain\vo\ChatSessionVO$ChatSessionVOBuilder.class

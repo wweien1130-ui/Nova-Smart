@@ -1,6 +1,7 @@
-com\hmall\api\client\CartFeignClient.class
 com\hmall\api\client\ItemFeignClient.class
-com\hmall\api\config\DefaultFeignConfig$1.class
 com\hmall\api\config\DefaultFeignConfig.class
+com\hmall\api\client\UserFeignClient.class
+com\hmall\api\client\CartFeignClient.class
+com\hmall\api\config\DefaultFeignConfig$1.class
 com\hmall\api\client\AddressFeignClient.class
 com\hmall\api\client\OrderFeignClient.class

@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * 商品服务Feign客户端
  */
-@FeignClient(name = "hmall-service", path = "/items")
+@FeignClient(name = "hmall-service", path = "/items", configuration = com.hmall.api.config.DefaultFeignConfig.class)
 public interface ItemFeignClient {
 
     @GetMapping

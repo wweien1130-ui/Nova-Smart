@@ -2,6 +2,7 @@ package com.liang.agent.tool;
 
 import com.hmall.api.client.CartFeignClient;
 import com.hmall.common.domain.dto.CartFormDTO;
+import com.hmall.common.domain.vo.CartVO;
 import com.liang.agent.config.ToolResultHolder;
 import com.liang.agent.constants.Constant;
 import com.liang.agent.converters.CartConverter;
@@ -20,7 +21,6 @@ import static com.liang.agent.constants.Constant.ToolParamns.*;
 @Component
 @RequiredArgsConstructor
 public class CartTool {
-
     private final CartFeignClient cartFeignClient;
 
     @Tool(name = Constant.Tools.ADD_TO_CART, description = "将商品添加到购物车")
@@ -36,6 +36,7 @@ public class CartTool {
         System.out.println("========== 调用了 addToCart，商品ID: " + itemId + " ==========");
 
         ToolContextUtil.setUserContext(toolContext);
+
 
         CartFormDTO cartFormDTO = new CartFormDTO();
         cartFormDTO.setItemId(itemId);
@@ -67,9 +68,13 @@ public class CartTool {
     public List<CartInfo> viewCart(ToolContext toolContext) {
         System.out.println("========== 调用了 viewCart ==========");
 
-        ToolContextUtil.setUserContext(toolContext);
+        Long userId = ToolContextUtil.setUserContext(toolContext);
+        System.out.println("========== viewCart 获取到 userId: " + userId + " ==========");
 
-        return CartConverter.toCartInfoList(cartFeignClient.queryMyCarts());
+        List<CartVO> carts = cartFeignClient.queryMyCarts();
+        System.out.println("========== viewCart 查询到购物车数量: " + (carts != null ? carts.size() : 0) + " ==========");
+
+        return CartConverter.toCartInfoList(carts);
     }
 
     @Tool(name = Constant.Tools.REMOVE_FROM_CART, description = "从购物车移除商品，需要先调用 viewCart 查看购物车获取商品ID")

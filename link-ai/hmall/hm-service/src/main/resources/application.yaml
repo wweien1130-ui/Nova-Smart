@@ -7,11 +7,23 @@ server:
       charset: utf-8
 spring:
   application:
-    name: hm-service
+    name: hmall-service
   profiles:
     active: dev
+
+  cloud:
+    nacos:
+      server-addr: 192.168.115.128:8848  # 直接写死
+      discovery:
+        enabled: true
+        register-enabled: true
+        namespace: ${NACOS_NAMESPACE:}
+        group: ${NACOS_GROUP:DEFAULT_GROUP}
+
+
+
   datasource:
-    url: jdbc:mysql://${hm.db.host}:3306/linkai?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://${hm.db.host}:${hm.db.port:3306}/linkai?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: ${hm.db.pw}

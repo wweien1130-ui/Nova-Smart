@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 订单服务Feign客户端
  */
-@FeignClient(name = "hmall-service", path = "/orders")
+@FeignClient(name = "hmall-service", path = "/orders", configuration = com.hmall.api.config.DefaultFeignConfig.class)
 public interface OrderFeignClient {
 
     @PostMapping
