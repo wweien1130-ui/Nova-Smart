@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7e7435e-88a4-45c2-adf0-517e657eef83" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/link-ai/hmall-nginx/conf/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/link-ai/hmall-nginx/conf/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/link-ai/hmall-nginx/html/hmall-portal/js/agent-chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/link-ai/hmall-nginx/html/hmall-portal/js/agent-chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/link-ai/hmall-nginx/logs/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/link-ai/hmall-nginx/logs/access.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/link-ai/hmall-nginx/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/link-ai/hmall-nginx/logs/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/link-ai/hmall-nginx/logs/nginx.pid" beforeDir="false" afterPath="$PROJECT_DIR$/link-ai/hmall-nginx/logs/nginx.pid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hm-agent/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hm-agent/spring.log" afterDir="false" />
-    </list>
+    <list default="true" id="d7e7435e-88a4-45c2-adf0-517e657eef83" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -182,7 +174,7 @@
       <workItem from="1778218607136" duration="829000" />
       <workItem from="1778748271692" duration="10540000" />
       <workItem from="1779013414021" duration="954000" />
-      <workItem from="1779018336589" duration="5873000" />
+      <workItem from="1779018336589" duration="6201000" />
     </task>
     <servers />
   </component>
