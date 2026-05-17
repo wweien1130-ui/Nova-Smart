@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7e7435e-88a4-45c2-adf0-517e657eef83" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/link-ai/hmall/hm-common/src/main/java/com/hmall/common/constants/RabbitMQConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/link-ai/hmall/hm-common/src/main/java/com/hmall/common/domain/msg/CartCleanMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/link-ai/hmall/hm-common/src/main/java/com/hmall/common/domain/msg/OrderStatusMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/link-ai/hmall/hm-common/src/main/java/com/hmall/common/domain/msg/OrderStockMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/link-ai/hmall/hm-service/src/main/java/com/hmall/config/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/link-ai/hmall/hm-service/src/main/java/com/hmall/service/mq/OrderMessageConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/link-ai/hmall/hm-service/src/main/java/com/hmall/service/mq/OrderMessageProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/link-ai/hmall/hm-service/src/main/java/com/hmall/service/mq/StockMessageConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/link-ai/MarkDown/SUM/5.17.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/link-ai/hmall/hm-common/src/main/java/com/hmall/common/domain/msg/ChatLogMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/link-ai/hmall/hm-common/src/main/java/com/hmall/common/domain/msg/UserActionMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/link-ai/hmall/hm-service/src/main/java/com/hmall/service/mq/ChatLogConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/link-ai/hmall/hm-service/src/main/java/com/hmall/service/mq/ChatLogProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/link-ai/hmall/hm-service/src/main/java/com/hmall/service/mq/UserActionProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/link-ai/hmall/hm-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/link-ai/hmall/hm-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/link-ai/hmall/hm-service/src/main/java/com/hmall/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/link-ai/hmall/hm-service/src/main/java/com/hmall/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hm-agent/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hm-agent/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/link-ai/hmall/hm-common/src/main/java/com/hmall/common/constants/RabbitMQConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/link-ai/hmall/hm-common/src/main/java/com/hmall/common/constants/RabbitMQConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/link-ai/hmall/hm-service/src/main/java/com/hmall/service/mq/OrderMessageProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/link-ai/hmall/hm-service/src/main/java/com/hmall/service/mq/OrderMessageProducer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +183,8 @@
       <workItem from="1778212959600" duration="1648000" />
       <workItem from="1778218607136" duration="829000" />
       <workItem from="1778748271692" duration="10540000" />
-      <workItem from="1779013414021" duration="638000" />
+      <workItem from="1779013414021" duration="954000" />
+      <workItem from="1779018336589" duration="4475000" />
     </task>
     <servers />
   </component>

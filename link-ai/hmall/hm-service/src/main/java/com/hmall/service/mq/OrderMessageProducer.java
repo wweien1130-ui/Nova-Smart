@@ -31,10 +31,10 @@ public class OrderMessageProducer {
 
     public void sendDelayOrderMessage(Long orderId) {
         log.info("发送延迟订单消息: orderId={}", orderId);
-        rabbitTemplate.convertAndSend(ORDER_EXCHANGE, ORDER_DELAY_QUEUE,
+        rabbitTemplate.convertAndSend(ORDER_EXCHANGE, ORDER_DELAY_QUEUE, //← 交换机 && 这里直接发到延迟队列
                 OrderStatusMessage.builder()
                         .orderId(orderId)
-                        .status(1)
+                        .status(1)  // ← 状态=1 表示"待支付/超时检查"
                         .reason("超时未支付")
                         .build());
     }

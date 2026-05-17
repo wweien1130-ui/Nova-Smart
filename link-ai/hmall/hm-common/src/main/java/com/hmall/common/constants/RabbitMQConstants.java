@@ -6,10 +6,10 @@ public class RabbitMQConstants {
     public static final String ORDER_EXCHANGE = "order.exchange";
 
     // 队列
-    public static final String STOCK_DEDUCT_QUEUE = "stock.deduct.queue";
-    public static final String CART_CLEAN_QUEUE = "cart.clean.queue";
-    public static final String ORDER_DELAY_QUEUE = "order.delay.queue";
-    public static final String ORDER_STATUS_QUEUE = "order.status.queue";
+    public static final String STOCK_DEDUCT_QUEUE = "stock.deduct.queue";   // 库存扣减队列
+    public static final String CART_CLEAN_QUEUE = "cart.clean.queue";   // 购物车清理队列
+    public static final String ORDER_DELAY_QUEUE = "order.delay.queue";    // 延迟检查队列
+    public static final String ORDER_STATUS_QUEUE = "order.status.queue";  // 订单状态队列
 
     // Routing Key
     public static final String STOCK_DEDUCT_KEY = "stock.deduct";
