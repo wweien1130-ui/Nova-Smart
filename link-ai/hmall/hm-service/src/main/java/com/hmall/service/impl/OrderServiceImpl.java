@@ -1,6 +1,8 @@
 package com.hmall.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.hmall.common.domain.msg.CartCleanMessage;
+import com.hmall.common.domain.msg.OrderStockMessage;
 import com.hmall.common.exception.BadRequestException;
 import com.hmall.common.utils.UserContext;
 import com.hmall.common.domain.dto.ItemDTO;
@@ -13,6 +15,7 @@ import com.hmall.service.ICartService;
 import com.hmall.service.IItemService;
 import com.hmall.service.IOrderDetailService;
 import com.hmall.service.IOrderService;
+import com.hmall.service.mq.OrderMessageProducer;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -39,6 +42,8 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
     private final IItemService itemService;
     private final IOrderDetailService detailService;
     private final ICartService cartService;
+    private final OrderMessageProducer orderMessageProducer;
+
 
     @Override
     @Transactional
@@ -74,14 +79,46 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         detailService.saveBatch(details);
 
         // 3.清理购物车商品
-        cartService.removeByItemIds(itemIds, UserContext.getUser());
+//        cartService.removeByItemIds(itemIds, UserContext.getUser());
+
+
+
+
+
+        // 3.发送 MQ 消息异步处理
+        Long userId = UserContext.getUser();
+
+        // 3.1 发送购物车清理消息
+        orderMessageProducer.sendCartCleanMessage(CartCleanMessage.builder()
+                .userId(userId)
+                .itemIds(itemIds)
+                .build());
+
+        // 3.2 发送库存扣减消息
+        orderMessageProducer.sendStockDeductMessage(OrderStockMessage.builder()
+                .orderId(order.getId())
+                .userId(userId)
+                .items(itemNumMap.entrySet().stream()
+                        .map(e -> OrderStockMessage.OrderItem.builder()
+                                .itemId(e.getKey())
+                                .num(e.getValue())
+                                .build())
+                        .collect(Collectors.toList()))
+                .build());
+
+        // 3.3 发送延迟消息（30分钟后检查是否支付）
+        orderMessageProducer.sendDelayOrderMessage(order.getId());
+
+
+
+
 
         // 4.扣减库存
-        try {
+        /*try {
             itemService.deductStock(detailDTOS);
         } catch (Exception e) {
             throw new RuntimeException("库存不足！");
-        }
+        }*/
         return order.getId();
     }
 

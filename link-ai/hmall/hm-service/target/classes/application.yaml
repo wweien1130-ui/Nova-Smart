@@ -10,7 +10,19 @@ spring:
     name: hmall-service
   profiles:
     active: dev
-
+  rabbitmq:
+    host: 192.168.115.128
+    port: 5672
+    username: hmall
+    password: 123456
+    virtual-host: /
+  kafka:
+    bootstrap-servers: 192.168.115.128:9092
+    consumer:
+      group-id: hmall-group
+      auto-offset-reset: earliest
+    producer:
+      acks: all
   cloud:
     nacos:
       server-addr: 192.168.115.128:8848  # 直接写死
